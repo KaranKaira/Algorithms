@@ -1,4 +1,5 @@
 // Given a String, find the longest palindromic subsequence
+// LPS(s) = LCS(s,reverse(s))
 #include <bits/stdc++.h>
 using namespace std;
 
