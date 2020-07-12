@@ -2,5 +2,6 @@ Important Algos of strings
 
 KMP algorithm
 Rabin karp
+KMP or Prefix Function
 Z’s algorithm
 Aho Corasick String Matching
