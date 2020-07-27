@@ -1,4 +1,10 @@
+#include<bits/stdc++.h>
+using namespace std;
+struct node {
 
+    int data;
+    Node* next;
+};
 struct node *reverse (struct node *head, int k)
 { 
     // Complete this method
