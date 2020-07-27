@@ -38,16 +38,15 @@ Node* rotate(Node* head, int k)
 }
 void push(Node** head_ref, int new_data)
 {
-    /* allocate node */
+    
     Node* new_node = new Node();
 
-    /* put in the data */
     new_node->data = new_data;
 
-    //link the old list off the new node 
+     
     new_node->next = (*head_ref);
 
-    // move the head to point to the new node 
+     
     (*head_ref) = new_node;
 }
 void printList(Node* node)
