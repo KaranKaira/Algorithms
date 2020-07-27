@@ -13,7 +13,7 @@ int length(Node *n)
 }
 Node* rotate(Node* head, int k)
 {
-    // Your code here
+    
     int len = 0;
     len = length(head);
     k = k%len;
