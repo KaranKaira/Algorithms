@@ -5,7 +5,7 @@ int dfs(int i,vector<int> adj[],int used[],int pr[])
 {
    used[i] =1 ;
    for(int v:adj[i])
-   {  if(pr[i] == v) continue;
+   {  if(pr[v] == i) continue;
         pr[v] = i;
         if(used[v] == 1) return 1;
         else if(used[v]==0) {
