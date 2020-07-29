@@ -29,9 +29,5 @@ int main()
 {
 //input graph edges in vector<int> adj[]
 // initialize used/color array with 0  
-int ok = 0
-for(int i = 0;i<numberofvertices;i++)
-if(!used[i]) ok = ok || dfs(i);
-if(ok) cout<<"Cycle present ";
-else cout<<"Cycle Not Present ";
+cout<<isCylic(v,adj[]); // 1 - cycle present 0 - not present 
 }
