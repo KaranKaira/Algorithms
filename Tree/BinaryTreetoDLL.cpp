@@ -1,3 +1,5 @@
+#include<bits/stdc++.h>
+using namespace std;
 Node*  ans(Node * root) 
 {
    if(root == NULL) return NULL;
