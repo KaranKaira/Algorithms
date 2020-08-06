@@ -37,7 +37,7 @@ void addRemaining(Node*f,Node*stop,int &carry,Node* &res)
     t->next = res;
     res = t;
 }
-struct Node* addTwoLists(struct Node* f, struct Node* s)   //// main function............................
+struct Node* addTwoLists(struct Node* f, struct Node* s)   //// start from here............................
 {
     // code here
     
