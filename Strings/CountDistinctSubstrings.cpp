@@ -9,7 +9,7 @@ void solve()
 	string s; cin >> s;
 	int n = s.size();
 
-	vector<ll> hash(n + 1, 0);
+	vector<ll> hash(n + 1, 0); //hash[i] is hash for prefix of length i;
 	int pow_p[n] ;
 	pow_p[0] = 1 ;
 	int p = 31;
