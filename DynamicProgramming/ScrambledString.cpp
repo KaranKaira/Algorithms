@@ -14,8 +14,8 @@ int solve(string a,string b)
     int n = a.size();
     for(int i = 1;i<n;i++)
     {
-        int c1 = solve(a.substr(0,i) , b.substr(n-i,i)) && solve(a.substr(i,n-i),b.substr(0,n-i));
-        int c2 = solve(a.substr(0,i) , b.substr(0,i)) && solve(a.substr(i,n-i) , b.substr(i,n-i));
+        int c1 = solve(a.substr(0,i) , b.substr(n-i,i)) && solve(a.substr(i,n-i),b.substr(0,n-i)); // no swap at i
+        int c2 = solve(a.substr(0,i) , b.substr(0,i)) && solve(a.substr(i,n-i) , b.substr(i,n-i)); // swap at i
         
         if(c1 | c2 ) return m[key] = 1;
     }
