@@ -1,3 +1,10 @@
+//Given a singly linked list: A0→A1→…→An-1→An, reorder it to: A0→An→A1→An-1→A2→An-2→…
+// For example: Given 1->2->3->4->5 its reorder is 1->5->2->4->3.
+
+// Note: It is recommended do this in-place without altering the nodes' values.
+
+
+
 Node* reverse(Node*head)
 {
     if(head==NULL) return head;
