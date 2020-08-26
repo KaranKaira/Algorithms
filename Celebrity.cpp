@@ -2,7 +2,7 @@
 // ways to solve this
 // naive,graph,stack,2 pointer and this one
 
- idea of this findId.
+//  idea of this findId.
  // in this fun we are assuming a person as celebrity (initially 0) 
  // if our assumed person is not celebrity it will be clear in the future 
  // when this happens we make the current person as celebrity
