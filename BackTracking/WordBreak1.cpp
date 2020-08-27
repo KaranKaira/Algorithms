@@ -31,10 +31,42 @@ bool Util(map<string,bool> &m,string&q,int i)
 }
 bool solve(map<string,bool> &m,string &q)
 {
-    return Util(m,q,0);
+    // recursion
+    // return Util(m,q,0);
+    
+    
+    // dp
+    
+    int n = q.size();
+    bool dp[n];
+    for(int i=0;i<n;i++) dp[i] = false;
+    
+    vector<int> index;
+    index.push_back(-1);
+    
+    for(int i=0;i<n;i++)
+    {
+        int f = 0;
+        int size = index.size();
+        for(int j = size-1;j>=0;j--)
+        {
+            string now = q.substr(index[j]+1,i-index[j]);
+            if(m[now])
+            {
+                f=1;
+                break;
+            }
+        }
+        if(f)
+        {
+            dp[i] = true;
+            index.push_back(i);
+        }
+    }
+     return dp[n-1];
 }
 int main() {
-
+	//code
 	int t;cin>>t;while(t--)
 	{
 	    map<string,bool> m;
