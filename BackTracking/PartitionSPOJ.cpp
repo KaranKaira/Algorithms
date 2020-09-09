@@ -4,7 +4,7 @@
 //The lexicographic order is defined as follows: sequence a1,...,an comes before b1,...,bn iff there exists such an integer i,1<=i<=n, that aj=bj for all j, 1<= j< i, and ai< bi.
 
 #include <bits/stdc++.h>
-
+using namespaces std;
 int no = 0;
 int add(vector<int> & ans)
 {
