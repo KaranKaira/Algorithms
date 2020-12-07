@@ -1,4 +1,5 @@
-
+// O(n) preprocessing 
+// O(logn) query using segment tree
 #include <bits/stdc++.h>
 using namespace std;
 #define len(s) int(s.size())
