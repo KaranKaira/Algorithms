@@ -7,6 +7,7 @@ Shortest Path from every vertex to every other vertex **Floyd Warshall**
 Minimum Spanning tree **Prim**
 Minimum Spanning tree **Kruskal**
 Topological Sort
-Johnson’s algorithm
 Articulation Points (or Cut Vertices) in a Graph
 Bridges in a graph
+Kosaraju for SCC
+LCA using segment tree
